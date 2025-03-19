@@ -11,9 +11,5 @@ export default function Page() {
   }
   log2()
 
-  return (
-    <>
-      <h1>Void</h1>
-    </>
-  )
+  return <h1>Void</h1>
 }

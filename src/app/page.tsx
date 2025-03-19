@@ -5,7 +5,14 @@ export default function Home() {
     <>
       <h1 className='font-bold text-3xl'>React TypeScript</h1>
 
-      <Link href='/void'>Void</Link>
+      <ul>
+        <li>
+          <Link href='/void'>Void</Link>
+        </li>
+        <li>
+          <Link href='/function-types'>Function Types</Link>
+        </li>
+      </ul>
     </>
   )
 }
