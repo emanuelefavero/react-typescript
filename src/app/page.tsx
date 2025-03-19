@@ -24,6 +24,9 @@ export default function Home() {
         <li>
           <Link href='/merging-types'>Merging Types</Link>
         </li>
+        <li>
+          <Link href='/merging-interfaces'>Merging Interfaces</Link>
+        </li>
       </ul>
     </>
   )
