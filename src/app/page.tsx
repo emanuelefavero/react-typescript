@@ -18,6 +18,9 @@ export default function Home() {
         <li>
           <Link href='/interfaces'>Interfaces</Link>
         </li>
+        <li>
+          <Link href='/union-types'>Union Types</Link>
+        </li>
       </ul>
     </>
   )
