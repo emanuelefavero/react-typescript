@@ -25,3 +25,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   padding: 1rem;
 }
+
+a {
+  @apply text-blue-500 dark:text-blue-400 hover:underline;
+}
