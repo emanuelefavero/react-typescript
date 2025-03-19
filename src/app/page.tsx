@@ -21,6 +21,9 @@ export default function Home() {
         <li>
           <Link href='/union-types'>Union Types</Link>
         </li>
+        <li>
+          <Link href='/merging-types'>Merging Types</Link>
+        </li>
       </ul>
     </>
   )
