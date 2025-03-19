@@ -12,6 +12,9 @@ export default function Home() {
         <li>
           <Link href='/function-types'>Function Types</Link>
         </li>
+        <li>
+          <Link href='/type-aliases'>Type Aliases</Link>
+        </li>
       </ul>
     </>
   )
