@@ -15,6 +15,9 @@ export default function Home() {
         <li>
           <Link href='/type-aliases'>Type Aliases</Link>
         </li>
+        <li>
+          <Link href='/interfaces'>Interfaces</Link>
+        </li>
       </ul>
     </>
   )
