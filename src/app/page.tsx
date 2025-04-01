@@ -33,6 +33,9 @@ export default function Home() {
         <li>
           <Link href='/react-node'>ReactNode</Link>
         </li>
+        <li>
+          <Link href='/react-fc'>React.FC</Link>
+        </li>
       </ul>
     </>
   )
