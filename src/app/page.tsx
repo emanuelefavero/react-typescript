@@ -30,6 +30,9 @@ export default function Home() {
         <li>
           <Link href='/props-with-children'>PropsWithChildren</Link>
         </li>
+        <li>
+          <Link href='/react-node'>ReactNode</Link>
+        </li>
       </ul>
     </>
   )

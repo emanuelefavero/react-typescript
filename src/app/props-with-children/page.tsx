@@ -4,11 +4,13 @@ import Component from './Component'
 
 // TIP: Use PropsWithChildren when you want to automatically include `children` without manually adding it to the props type
 // TIP: Another way to define a component that accepts children is to use `ReactNode` in the props type @see @/app/react-node/page.tsx
+// NOTE: PropsWithChildren is generally less used than ReactNode due to flexibility
 
 export default function Page() {
   return (
     <div>
       <h1>PropsWithChildren</h1>
+
       <Component title='Hello'>
         <p>World</p>
       </Component>
