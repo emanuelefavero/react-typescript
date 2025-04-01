@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --link: oklch(0.623 0.214 259.815);
 }
 
 @theme inline {
@@ -16,6 +17,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --link: oklch(0.707 0.165 254.624);
   }
 }
 
@@ -27,5 +29,9 @@ body {
 }
 
 a {
-  @apply text-blue-500 dark:text-blue-400 hover:underline;
+  color: var(--link);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
