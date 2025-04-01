@@ -27,6 +27,9 @@ export default function Home() {
         <li>
           <Link href='/merging-interfaces'>Merging Interfaces</Link>
         </li>
+        <li>
+          <Link href='/props-with-children'>PropsWithChildren</Link>
+        </li>
       </ul>
     </>
   )
