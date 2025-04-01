@@ -36,6 +36,9 @@ export default function Home() {
         <li>
           <Link href='/react-fc'>React.FC</Link>
         </li>
+        <li>
+          <Link href='/jsx-element'>JSX.Element</Link>
+        </li>
       </ul>
     </>
   )
