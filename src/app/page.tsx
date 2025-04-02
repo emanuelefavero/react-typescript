@@ -43,10 +43,7 @@ export default function Home() {
           <Link href='/use-state-objects-array'>useState Objects Array</Link>
         </li>
         <li>
-          <Link href='/form-event'>FormEvent</Link>
-        </li>
-        <li>
-          <Link href='/change-event'>ChangeEvent</Link>
+          <Link href='/events'>Events</Link>
         </li>
       </ul>
     </>
