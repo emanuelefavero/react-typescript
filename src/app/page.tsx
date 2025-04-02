@@ -45,6 +45,9 @@ export default function Home() {
         <li>
           <Link href='/form-event'>FormEvent</Link>
         </li>
+        <li>
+          <Link href='/change-event'>ChangeEvent</Link>
+        </li>
       </ul>
     </>
   )
