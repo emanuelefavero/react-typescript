@@ -39,6 +39,9 @@ export default function Home() {
         <li>
           <Link href='/jsx-element'>JSX.Element</Link>
         </li>
+        <li>
+          <Link href='/use-state-objects-array'>useState Objects Array</Link>
+        </li>
       </ul>
     </>
   )
