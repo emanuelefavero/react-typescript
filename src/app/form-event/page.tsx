@@ -6,6 +6,8 @@ type User = {
   name: string
 }
 
+// * FormEvent is a built-in type in React that represents the event object for form events
+
 export default function Page() {
   const [users, setUsers] = useState<User[]>([])
 
