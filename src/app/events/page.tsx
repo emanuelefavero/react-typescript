@@ -27,6 +27,9 @@ export default function Page() {
         <li>
           <Link href='/events/clipboard-event'>ClipboardEvent</Link>
         </li>
+        <li>
+          <Link href='/events/composition-event'>CompositionEvent</Link>
+        </li>
       </ul>
     </>
   )
