@@ -45,6 +45,9 @@ export default function Home() {
         <li>
           <Link href='/events'>Events</Link>
         </li>
+        <li>
+          <Link href='/generics'>Generics</Link>
+        </li>
       </ul>
     </>
   )
