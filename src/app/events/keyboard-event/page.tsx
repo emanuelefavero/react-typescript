@@ -2,6 +2,8 @@
 
 import { type KeyboardEvent, useState } from 'react'
 
+// * KeyboardEvent is a built-in type in React that represents the event object for keyboard events. It is often used to handle events like key presses, key releases, and key combinations.
+
 export default function Page() {
   const [numbers, setNumbers] = useState<number[]>([])
 
