@@ -39,24 +39,28 @@ export default function Page() {
   }
 
   return (
-    <div className='p-4 space-y-6 flex flex-col items-center'>
-      <div
-        draggable
-        onDragStart={handleDragStart}
-        onDragEnd={handleDragEnd}
-        className={`w-24 h-24 ${dragColor} text-white flex items-center justify-center rounded shadow-lg cursor-grab`}
-      >
-        Drag Me
-      </div>
+    <>
+      <h1>DragEvent</h1>
 
-      <div
-        onDragOver={handleDragOver}
-        onDragLeave={handleDragLeave}
-        onDrop={handleDrop}
-        className={`w-32 h-32 ${dropColor} flex items-center justify-center rounded shadow-lg border border-gray-500 text-white`}
-      >
-        {dropText}
+      <div className='p-4 space-y-6 flex flex-col items-center'>
+        <div
+          draggable
+          onDragStart={handleDragStart}
+          onDragEnd={handleDragEnd}
+          className={`w-24 h-24 ${dragColor} text-white flex items-center justify-center rounded shadow-lg cursor-grab`}
+        >
+          Drag Me
+        </div>
+
+        <div
+          onDragOver={handleDragOver}
+          onDragLeave={handleDragLeave}
+          onDrop={handleDrop}
+          className={`w-32 h-32 ${dropColor} flex items-center justify-center rounded shadow-lg border border-gray-500 text-white`}
+        >
+          {dropText}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
