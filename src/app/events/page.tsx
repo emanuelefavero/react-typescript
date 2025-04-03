@@ -21,6 +21,9 @@ export default function Page() {
         <li>
           <Link href='/events/focus-event'>FocusEvent</Link>
         </li>
+        <li>
+          <Link href='/events/drag-event'>DragEvent</Link>
+        </li>
       </ul>
     </>
   )
