@@ -18,6 +18,9 @@ export default function Page() {
         <li>
           <Link href='/events/keyboard-event'>KeyboardEvent</Link>
         </li>
+        <li>
+          <Link href='/events/focus-event'>FocusEvent</Link>
+        </li>
       </ul>
     </>
   )
