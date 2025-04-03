@@ -12,6 +12,9 @@ export default function Page() {
         <li>
           <Link href='/events/change-event'>ChangeEvent</Link>
         </li>
+        <li>
+          <Link href='/events/mouse-event'>MouseEvent</Link>
+        </li>
       </ul>
     </>
   )
