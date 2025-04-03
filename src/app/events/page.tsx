@@ -24,6 +24,9 @@ export default function Page() {
         <li>
           <Link href='/events/drag-event'>DragEvent</Link>
         </li>
+        <li>
+          <Link href='/events/clipboard-event'>ClipboardEvent</Link>
+        </li>
       </ul>
     </>
   )
