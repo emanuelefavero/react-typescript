@@ -5,6 +5,8 @@ import Input from '@/components/Input'
 import Textarea from '@/components/Textarea'
 import Select from '@/components/Select'
 
+// * This page demonstrates how to use a generic event handler for different input types
+
 export default function Page() {
   const [name, setName] = useState('')
 

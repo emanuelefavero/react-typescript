@@ -3,6 +3,8 @@
 import { useLocalStorage } from './hooks/useLocalStorage'
 import Button from '@/components/Button'
 
+// * This page shows how to create a generic hook that uses localStorage
+
 export default function Page() {
   const [count, setCount] = useLocalStorage<number>('count', 0)
   const [user, setUser] = useLocalStorage<{ name: string }>('user', {
