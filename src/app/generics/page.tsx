@@ -9,6 +9,9 @@ export default function Page() {
         <li>
           <Link href='/generics/generic-component'>Generic Component</Link>
         </li>
+        <li>
+          <Link href='/generics/generic-hook'>Generic Hook</Link>
+        </li>
       </ul>
     </>
   )
