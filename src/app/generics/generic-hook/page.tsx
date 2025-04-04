@@ -1,6 +1,7 @@
 'use client'
 
 import { useLocalStorage } from './hooks/useLocalStorage'
+import Button from '@/components/Button'
 
 export default function Page() {
   const [count, setCount] = useLocalStorage<number>('count', 0)
@@ -15,14 +16,16 @@ export default function Page() {
       <p>{count}</p>
       <p>{user.name}</p>
 
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button
+      <Button onClick={() => setCount(count + 1)} aria-label='Increment count'>
+        +
+      </Button>
+      <Button
         onClick={() =>
           setUser({ name: user.name === 'John' ? 'Jane' : 'John' })
         }
       >
         Change name
-      </button>
+      </Button>
     </>
   )
 }
