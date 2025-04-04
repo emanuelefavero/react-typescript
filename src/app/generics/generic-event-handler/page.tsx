@@ -3,6 +3,7 @@
 import { type ChangeEvent, useState } from 'react'
 import Input from '@/components/Input'
 import Textarea from '@/components/TextArea'
+import Select from '@/components/Select'
 
 export default function Page() {
   const [name, setName] = useState('')
@@ -35,7 +36,7 @@ export default function Page() {
           placeholder='Enter your name'
         />
 
-        <select
+        <Select
           value={name}
           onChange={handleChange}
           className='border border-gray-300 rounded-md p-2 mr-2'
@@ -43,7 +44,7 @@ export default function Page() {
           <option value=''>Select a name</option>
           <option value='John'>John</option>
           <option value='Jane'>Jane</option>
-        </select>
+        </Select>
 
         <p className='text-green-600 dark:text-green-400'>{name}</p>
       </div>
