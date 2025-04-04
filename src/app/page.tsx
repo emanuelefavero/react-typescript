@@ -48,6 +48,9 @@ export default function Home() {
         <li>
           <Link href='/generics'>Generics</Link>
         </li>
+        <li>
+          <Link href='/use-ref'>useRef</Link>
+        </li>
       </ul>
     </>
   )
