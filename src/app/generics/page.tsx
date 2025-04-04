@@ -17,6 +17,9 @@ export default function Page() {
             Generic Event Handler
           </Link>
         </li>
+        <li>
+          <Link href='/generics/generic-context'>Generic Context</Link>
+        </li>
       </ul>
     </>
   )
