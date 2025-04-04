@@ -2,7 +2,7 @@
 
 import { type ChangeEvent, useState } from 'react'
 import Input from '@/components/Input'
-import Textarea from '@/components/TextArea'
+import Textarea from '@/components/Textarea'
 import Select from '@/components/Select'
 
 export default function Page() {
