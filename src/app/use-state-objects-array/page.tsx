@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Button from '@/components/Button'
 
 type User = {
   name: string
@@ -19,14 +20,13 @@ export default function Page() {
     <>
       <h1>useState Objects Array</h1>
 
-      <button
-        className='bg-blue-500 text-white p-2 rounded cursor-pointer'
+      <Button
         onClick={() => {
           setUsers((prev) => [{ name: 'New User' }, ...prev])
         }}
       >
         Add User
-      </button>
+      </Button>
 
       <ul>
         {users.map((user, index) => (

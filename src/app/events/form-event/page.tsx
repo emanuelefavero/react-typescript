@@ -1,6 +1,7 @@
 'use client'
 
 import { type FormEvent, useState } from 'react'
+import Button from '@/components/Button'
 
 type User = {
   name: string
@@ -35,12 +36,12 @@ export default function Page() {
           required
           className='border border-gray-300 rounded-md p-2 mr-2'
         />
-        <button
+        <Button
           type='submit'
           className='cursor-pointer bg-blue-500 text-white rounded-md p-2'
         >
           Add User
-        </button>
+        </Button>
       </form>
 
       <ul>

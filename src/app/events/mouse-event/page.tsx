@@ -1,6 +1,7 @@
 'use client'
 
 import { type MouseEvent, useState } from 'react'
+import Button from '@/components/Button'
 
 // * MouseEvent is a built-in type in React that represents the event object for mouse events. It is often used to handle events like clicks
 
@@ -17,14 +18,12 @@ export default function Page() {
     <>
       <h1>MouseEvent</h1>
 
-      <button
+      <Button
         onClick={handleClick}
-        className={`${
-          clicked ? 'bg-green-600' : 'bg-blue-600'
-        } text-white rounded-md p-2 cursor-pointer`}
+        className={clicked ? 'bg-green-600 hover:bg-green-700' : ''}
       >
         {clicked ? 'Clicked' : 'Click Me'}
-      </button>
+      </Button>
     </>
   )
 }
