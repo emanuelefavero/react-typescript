@@ -51,6 +51,9 @@ export default function Home() {
         <li>
           <Link href='/use-ref'>useRef</Link>
         </li>
+        <li>
+          <Link href='/reset-all-form-inputs'>Reset All Form Inputs</Link>
+        </li>
       </ul>
     </>
   )
