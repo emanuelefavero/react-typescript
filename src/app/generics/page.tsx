@@ -12,6 +12,11 @@ export default function Page() {
         <li>
           <Link href='/generics/generic-hook'>Generic Hook</Link>
         </li>
+        <li>
+          <Link href='/generics/generic-event-handler'>
+            Generic Event Handler
+          </Link>
+        </li>
       </ul>
     </>
   )
