@@ -45,11 +45,43 @@ a {
   }
 }
 
+button {
+  background-color: var(--color-blue-500);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: calc(var(--spacing) * 2);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-blue-600);
+  }
+
+  &:active {
+    --tw-scale-x: 95%;
+    --tw-scale-y: 95%;
+    --tw-scale-z: 95%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(
+      --tw-ease,
+      var(--default-transition-timing-function)
+        /* cubic-bezier(0.4, 0, 0.2, 1) */
+    );
+    transition-duration: var(
+      --tw-duration,
+      var(--default-transition-duration) /* 150ms */
+    );
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+}
+
 button.link {
   color: var(--link);
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
 
   &:hover {
     text-decoration: underline;
