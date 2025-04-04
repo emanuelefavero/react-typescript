@@ -36,11 +36,7 @@ export default function Page() {
           placeholder='Enter your name'
         />
 
-        <Select
-          value={name}
-          onChange={handleChange}
-          className='border border-gray-300 rounded-md p-2 mr-2'
-        >
+        <Select value={name} onChange={handleChange}>
           <option value=''>Select a name</option>
           <option value='John'>John</option>
           <option value='Jane'>Jane</option>

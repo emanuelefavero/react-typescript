@@ -17,16 +17,22 @@ export default function Page() {
       <p suppressHydrationWarning>{count}</p>
       <p suppressHydrationWarning>{user.name}</p>
 
-      <Button onClick={() => setCount(count + 1)} aria-label='Increment count'>
-        +
-      </Button>
-      <Button
-        onClick={() =>
-          setUser({ name: user.name === 'John' ? 'Jane' : 'John' })
-        }
-      >
-        Change name
-      </Button>
+      <div className='flex gap-2'>
+        <Button
+          onClick={() => setCount(count + 1)}
+          aria-label='Increment count'
+          className='px-3'
+        >
+          +
+        </Button>
+        <Button
+          onClick={() =>
+            setUser({ name: user.name === 'John' ? 'Jane' : 'John' })
+          }
+        >
+          Change name
+        </Button>
+      </div>
     </>
   )
 }
