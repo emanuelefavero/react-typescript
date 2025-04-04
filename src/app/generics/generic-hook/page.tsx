@@ -13,8 +13,9 @@ export default function Page() {
     <>
       <h1>Generic Hook</h1>
 
-      <p>{count}</p>
-      <p>{user.name}</p>
+      {/* BEWARE: Suppress hydration warning needed for localStorage */}
+      <p suppressHydrationWarning>{count}</p>
+      <p suppressHydrationWarning>{user.name}</p>
 
       <Button onClick={() => setCount(count + 1)} aria-label='Increment count'>
         +
