@@ -1,11 +1,11 @@
 import type { SelectHTMLAttributes, Ref } from 'react'
 
-type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
+type Props = SelectHTMLAttributes<HTMLSelectElement> & {
   className?: string
   ref?: Ref<HTMLSelectElement>
 }
 
-export default function Component({ className, ref, ...props }: SelectProps) {
+export default function Component({ className, ref, ...props }: Props) {
   return (
     <select
       className={`border border-gray-300 rounded-md p-2 mr-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
