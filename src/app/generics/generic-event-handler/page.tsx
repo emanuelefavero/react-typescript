@@ -2,6 +2,7 @@
 
 import { type ChangeEvent, useState } from 'react'
 import Input from '@/components/Input'
+import TextArea from '@/components/TextArea'
 
 export default function Page() {
   const [name, setName] = useState('')
@@ -28,11 +29,10 @@ export default function Page() {
           placeholder='Enter your name'
         />
 
-        <textarea
+        <TextArea
           value={name}
           onChange={handleChange}
           placeholder='Enter your name'
-          className='border border-gray-300 rounded-md p-2 mr-2'
         />
 
         <select
