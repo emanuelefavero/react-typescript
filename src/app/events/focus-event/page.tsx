@@ -1,6 +1,7 @@
 'use client'
 
 import { type FocusEvent, useState } from 'react'
+import Input from '@/components/Input'
 
 // * FocusEvent is a built-in type in React that represents the event object for focus events
 
@@ -21,14 +22,12 @@ export default function Page() {
     <>
       <h1>FocusEvent</h1>
 
-      <input
+      <Input
         type='text'
         onFocus={handleFocus}
         onBlur={handleBlur}
         placeholder='Click to focus'
-        className={`${
-          focused ? 'bg-green-600' : 'bg-blue-600'
-        } text-white rounded-md p-2 mt-4`}
+        className={focused ? 'bg-blue-600/20' : ''}
       />
       <p className='mt-2'>
         {focused ? 'Input is focused' : 'Click the input to focus it'}

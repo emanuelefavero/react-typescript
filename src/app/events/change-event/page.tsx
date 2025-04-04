@@ -1,6 +1,7 @@
 'use client'
 
 import { type ChangeEvent, useState } from 'react'
+import Input from '@/components/Input'
 
 // * ChangeEvent is a built-in type in React that represents the event object for change events
 
@@ -15,12 +16,11 @@ export default function Page() {
     <>
       <h1>ChangeEvent</h1>
 
-      <input
+      <Input
         type='text'
         value={name}
         onChange={handleChange}
         placeholder='Enter your name'
-        className='border border-gray-300 rounded-md p-2 mr-2'
       />
       {name}
     </>

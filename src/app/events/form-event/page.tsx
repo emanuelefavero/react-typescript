@@ -2,6 +2,7 @@
 
 import { type FormEvent, useState } from 'react'
 import Button from '@/components/Button'
+import Input from '@/components/Input'
 
 type User = {
   name: string
@@ -29,13 +30,7 @@ export default function Page() {
       <h1>FormEvent</h1>
 
       <form onSubmit={handleAddUser}>
-        <input
-          type='text'
-          name='name'
-          placeholder='Enter your name'
-          required
-          className='border border-gray-300 rounded-md p-2 mr-2'
-        />
+        <Input type='text' name='name' placeholder='Enter your name' required />
         <Button
           type='submit'
           className='cursor-pointer bg-blue-500 text-white rounded-md p-2'
