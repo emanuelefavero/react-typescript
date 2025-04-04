@@ -1,6 +1,7 @@
 'use client'
 
 import { type ChangeEvent, useState } from 'react'
+import Input from '@/components/Input'
 
 export default function Page() {
   const [name, setName] = useState('')
@@ -20,12 +21,11 @@ export default function Page() {
       <h1>Generic Event Handler</h1>
 
       <div className='flex flex-col max-w-prose gap-2'>
-        <input
+        <Input
           type='text'
           value={name}
           onChange={handleChange}
           placeholder='Enter your name'
-          className='border border-gray-300 rounded-md p-2 mr-2'
         />
 
         <textarea
