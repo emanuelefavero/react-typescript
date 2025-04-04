@@ -27,9 +27,8 @@ export default function Page() {
         <Button onClick={handleClick}>Focus Input</Button>
         <Button
           onClick={() => {
-            if (inputRef.current) {
-              inputRef.current.value = ''
-            }
+            // TIP: You can use the non-null assertion operator (!) to tell TypeScript that the value is not null
+            inputRef.current!.value = ''
           }}
         >
           Clear Input
