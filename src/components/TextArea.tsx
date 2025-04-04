@@ -1,4 +1,5 @@
 import type { TextareaHTMLAttributes, Ref } from 'react'
+import { INPUT_STYLES } from '@/styles'
 
 type Props = TextareaHTMLAttributes<HTMLTextAreaElement> & {
   className?: string
@@ -8,9 +9,7 @@ type Props = TextareaHTMLAttributes<HTMLTextAreaElement> & {
 export default function Component({ className, ref, ...props }: Props) {
   return (
     <textarea
-      className={`border border-gray-300 rounded-md p-2 mr-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-        className ?? ''
-      }`}
+      className={`${INPUT_STYLES} ${className ?? ''}`}
       ref={ref}
       {...props}
     />
