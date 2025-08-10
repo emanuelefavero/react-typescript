@@ -42,12 +42,12 @@ export default function Page() {
     <>
       <h1>DragEvent</h1>
 
-      <div className='p-4 space-y-6 flex flex-col items-center'>
+      <div className='flex flex-col items-center space-y-6 p-4'>
         <div
           draggable
           onDragStart={handleDragStart}
           onDragEnd={handleDragEnd}
-          className={`w-24 h-24 ${dragColor} text-white flex items-center justify-center rounded shadow-lg cursor-grab`}
+          className={`h-24 w-24 ${dragColor} flex cursor-grab items-center justify-center rounded text-white shadow-lg`}
         >
           Drag Me
         </div>
@@ -56,7 +56,7 @@ export default function Page() {
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
-          className={`w-32 h-32 ${dropColor} flex items-center justify-center rounded shadow-lg border border-gray-500 text-white`}
+          className={`h-32 w-32 ${dropColor} flex items-center justify-center rounded border border-gray-500 text-white shadow-lg`}
         >
           {dropText}
         </div>

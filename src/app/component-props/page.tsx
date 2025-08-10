@@ -1,7 +1,7 @@
 'use client'
 
+import { useEffect, useRef } from 'react'
 import Input from './Input'
-import { useRef, useEffect } from 'react'
 
 // TIP: @see ./Input to view ComponentPropsWithRef in action
 

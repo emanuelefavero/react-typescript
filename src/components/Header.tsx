@@ -1,8 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function Component() {
   const pathname = usePathname()
@@ -11,7 +10,7 @@ export default function Component() {
   if (pathname === '/') return 'Home'
 
   return (
-    <div className='flex gap-2 mb-2'>
+    <div className='mb-2 flex gap-2'>
       <Link href='/'>Home</Link>
       <button onClick={() => router.back()} className='link'>
         Go Back

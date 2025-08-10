@@ -15,8 +15,8 @@ export default function Input({ className, ...props }: Props) {
       <input
         type='text'
         className={clsx(
-          'border border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500 focus:bg-blue-500/10',
-          className
+          'rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:bg-blue-500/10 focus:outline-none',
+          className,
         )}
         {...props} // Make sure to place {...props} here
       />

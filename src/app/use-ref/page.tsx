@@ -1,8 +1,8 @@
 'use client'
 
-import { useRef } from 'react'
-import Input from '@/components/shared/Input'
 import Button from '@/components/shared/Button'
+import Input from '@/components/shared/Input'
+import { useRef } from 'react'
 
 // * useRef is a built-in hook in React that allows you to create a mutable reference to a DOM element or a value that persists across renders. It returns a ref object with a current property that can be used to access the referenced element or value
 
@@ -17,7 +17,7 @@ export default function Page() {
     <>
       <h1>useRef</h1>
 
-      <div className='flex flex-col max-w-prose gap-2'>
+      <div className='flex max-w-prose flex-col gap-2'>
         <Input
           type='text'
           ref={inputRef}

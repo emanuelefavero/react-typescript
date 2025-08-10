@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import Button from '@/components/shared/Button'
+import { useState } from 'react'
 
 type User = {
   name: string

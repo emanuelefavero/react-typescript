@@ -1,7 +1,7 @@
 'use client'
 
-import { type FocusEvent, useState } from 'react'
 import Input from '@/components/shared/Input'
+import { type FocusEvent, useState } from 'react'
 
 // * FocusEvent is a built-in type in React that represents the event object for focus events
 

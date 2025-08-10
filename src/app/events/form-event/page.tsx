@@ -1,8 +1,8 @@
 'use client'
 
-import { type FormEvent, useState } from 'react'
 import Button from '@/components/shared/Button'
 import Input from '@/components/shared/Input'
+import { type FormEvent, useState } from 'react'
 
 type User = {
   name: string
@@ -33,7 +33,7 @@ export default function Page() {
         <Input type='text' name='name' placeholder='Enter your name' required />
         <Button
           type='submit'
-          className='cursor-pointer bg-blue-500 text-white rounded-md p-2'
+          className='cursor-pointer rounded-md bg-blue-500 p-2 text-white'
         >
           Add User
         </Button>

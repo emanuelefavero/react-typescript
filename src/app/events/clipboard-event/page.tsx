@@ -18,7 +18,7 @@ export default function Page() {
     <>
       <h1>ClipboardEvent</h1>
 
-      <div onCopy={handleCopy} className='bg-blue-500/10 rounded-md p-4 mt-4'>
+      <div onCopy={handleCopy} className='mt-4 rounded-md bg-blue-500/10 p-4'>
         <p className='text-slate-600 dark:text-slate-400'>
           Select some text in this box and press <strong>Ctrl + C</strong> or{' '}
           <strong>Command + C</strong> to copy it. The copied text will be

@@ -29,7 +29,7 @@ export default function Page() {
       <div
         onKeyDown={handleKeyPress}
         tabIndex={0}
-        className='w-full min-h-96 bg-blue-500/10 rounded-md p-4 outline-none focus:border-2 focus:border-blue-500/20 mt-4'
+        className='mt-4 min-h-96 w-full rounded-md bg-blue-500/10 p-4 outline-none focus:border-2 focus:border-blue-500/20'
       >
         <p className='text-slate-600 dark:text-slate-400'>
           Click here and press <strong>Enter</strong> to add a number or{' '}
