@@ -54,6 +54,9 @@ export default function Home() {
         <li>
           <Link href='/reset-all-form-inputs'>Reset All Form Inputs</Link>
         </li>
+        <li>
+          <Link href='/component-props'>ComponentProps</Link>
+        </li>
       </ul>
     </>
   )
