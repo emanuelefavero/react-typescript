@@ -1,8 +1,8 @@
 'use client'
 
 import { type FormEvent, useState } from 'react'
-import Button from '@/components/Button'
-import Input from '@/components/Input'
+import Button from '@/components/shared/Button'
+import Input from '@/components/shared/Input'
 
 type User = {
   name: string

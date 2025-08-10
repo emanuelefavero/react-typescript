@@ -1,9 +1,9 @@
 'use client'
 
 import { type ChangeEvent, useState } from 'react'
-import Input from '@/components/Input'
-import Textarea from '@/components/Textarea'
-import Select from '@/components/Select'
+import Input from '@/components/shared/Input'
+import Textarea from '@/components/shared/Textarea'
+import Select from '@/components/shared/Select'
 
 // * This page demonstrates how to use a generic event handler for different input types
 

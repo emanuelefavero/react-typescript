@@ -1,7 +1,7 @@
 'use client'
 
 import { useLocalStorage } from './hooks/useLocalStorage'
-import Button from '@/components/Button'
+import Button from '@/components/shared/Button'
 
 // * This page shows how to create a generic hook that uses localStorage
 

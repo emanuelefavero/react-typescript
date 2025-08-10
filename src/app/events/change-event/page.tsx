@@ -1,7 +1,7 @@
 'use client'
 
 import { type ChangeEvent, useState } from 'react'
-import Input from '@/components/Input'
+import Input from '@/components/shared/Input'
 
 // * ChangeEvent is a built-in type in React that represents the event object for change events
 

@@ -1,7 +1,7 @@
 'use client'
 
 import { type CompositionEvent, useState } from 'react'
-import Input from '@/components/Input'
+import Input from '@/components/shared/Input'
 
 // * CompositionEvent is a built-in type in React that represents the event object for composition events. It is often used to handle events related to text input, especially when using Input Method Editors (IMEs) for languages like Chinese, Japanese, or Korean. It is also used to handle dictation
 

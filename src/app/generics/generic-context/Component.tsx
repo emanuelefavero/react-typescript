@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { useAuthContext } from './AuthContext'
-import Button from '@/components/Button'
-import Input from '@/components/Input'
+import Button from '@/components/shared/Button'
+import Input from '@/components/shared/Input'
 
 export default function Component() {
   const [name, setName] = useState('')

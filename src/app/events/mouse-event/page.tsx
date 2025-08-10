@@ -1,7 +1,7 @@
 'use client'
 
 import { type MouseEvent, useState } from 'react'
-import Button from '@/components/Button'
+import Button from '@/components/shared/Button'
 
 // * MouseEvent is a built-in type in React that represents the event object for mouse events. It is often used to handle events like clicks
 

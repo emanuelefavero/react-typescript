@@ -1,7 +1,7 @@
 'use client'
 
-import Input from '@/components/Input'
-import Button from '@/components/Button'
+import Input from '@/components/shared/Input'
+import Button from '@/components/shared/Button'
 
 // * This page demonstrates how to reset all form inputs
 
