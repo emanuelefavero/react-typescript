@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { cn } from '@/lib/utils'
 
 // TIP: Use ComponentPropsWithRef to create a component that accepts all props of a native HTML element, including refs
 // TIP: There is also `ComponentProps` that does not specify if ref should be there or not and `ComponentPropsWithoutRef` to exclude it
@@ -14,7 +14,7 @@ export default function Input({ className, ...props }: Props) {
     <>
       <input
         type='text'
-        className={clsx(
+        className={cn(
           'rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:bg-blue-500/10 focus:outline-none',
           className,
         )}
