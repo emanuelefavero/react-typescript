@@ -1,17 +1,8 @@
-import type { InputHTMLAttributes, Ref } from 'react'
+import clsx from 'clsx'
 import { INPUT_STYLES } from '@/styles'
 
-type Props = InputHTMLAttributes<HTMLInputElement> & {
-  className?: string
-  ref?: Ref<HTMLInputElement>
-}
+type Props = React.ComponentPropsWithRef<'input'> & {}
 
-export default function Component({ className, ref, ...props }: Props) {
-  return (
-    <input
-      className={`${INPUT_STYLES} ${className ?? ''}`}
-      ref={ref}
-      {...props}
-    />
-  )
+export default function Component({ className, ...props }: Props) {
+  return <input className={clsx(INPUT_STYLES, className)} {...props} />
 }

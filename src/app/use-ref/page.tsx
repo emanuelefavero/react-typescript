@@ -22,6 +22,7 @@ export default function Page() {
           type='text'
           ref={inputRef}
           placeholder='Click the button to focus me'
+          className='text-red-500 placeholder:text-blue-500'
         />
 
         <Button onClick={handleClick}>Focus Input</Button>

@@ -1,17 +1,8 @@
-import type { SelectHTMLAttributes, Ref } from 'react'
+import clsx from 'clsx'
 import { INPUT_STYLES } from '@/styles'
 
-type Props = SelectHTMLAttributes<HTMLSelectElement> & {
-  className?: string
-  ref?: Ref<HTMLSelectElement>
-}
+type Props = React.ComponentPropsWithRef<'select'> & {}
 
-export default function Component({ className, ref, ...props }: Props) {
-  return (
-    <select
-      className={`${INPUT_STYLES} ${className ?? ''}`}
-      ref={ref}
-      {...props}
-    />
-  )
+export default function Component({ className, ...props }: Props) {
+  return <select className={clsx(INPUT_STYLES, className)} {...props} />
 }

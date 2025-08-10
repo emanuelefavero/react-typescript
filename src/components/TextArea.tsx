@@ -1,17 +1,8 @@
-import type { TextareaHTMLAttributes, Ref } from 'react'
+import clsx from 'clsx'
 import { INPUT_STYLES } from '@/styles'
 
-type Props = TextareaHTMLAttributes<HTMLTextAreaElement> & {
-  className?: string
-  ref?: Ref<HTMLTextAreaElement>
-}
+type Props = React.ComponentPropsWithRef<'textarea'> & {}
 
-export default function Component({ className, ref, ...props }: Props) {
-  return (
-    <textarea
-      className={`${INPUT_STYLES} ${className ?? ''}`}
-      ref={ref}
-      {...props}
-    />
-  )
+export default function Component({ className, ...props }: Props) {
+  return <textarea className={clsx(INPUT_STYLES, className)} {...props} />
 }
