@@ -63,6 +63,9 @@ export default function Home() {
         <li>
           <Link href='/hooks'>Hooks</Link>
         </li>
+        <li>
+          <Link href='/class-components'>Class Components</Link>
+        </li>
       </ul>
     </>
   )
