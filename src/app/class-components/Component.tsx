@@ -2,18 +2,11 @@
 
 import React from 'react'
 
-type User = {
-  id: number
-  name: string
-}
-
+type User = { id: number; name: string }
 type Props = React.ComponentPropsWithRef<'div'> & {}
+type State = { user: User }
 
-type State = {
-  user: User
-}
-
-class Component extends React.Component<Props, State> {
+export default class Component extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props)
 
@@ -26,7 +19,7 @@ class Component extends React.Component<Props, State> {
   }
 
   componentDidMount() {
-    console.log('Component mounted')
+    console.log('Mounted')
   }
 
   render() {
@@ -35,5 +28,3 @@ class Component extends React.Component<Props, State> {
     return <div {...this.props}>Name: {name}</div>
   }
 }
-
-export default Component
