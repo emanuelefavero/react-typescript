@@ -14,6 +14,9 @@ export default function Page() {
         <li>
           <Link href='/hooks/use-ref'>useRef</Link>
         </li>
+        <li>
+          <Link href='/hooks/custom-hooks'>Custom Hooks</Link>
+        </li>
       </ul>
     </>
   )
