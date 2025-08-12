@@ -18,6 +18,9 @@ const UserContext = createContext<UserContextType | undefined>(undefined)
 export function useUserContext() {
   const context = useContext(UserContext)
 
+  // TIP: To avoid the if statement, you can also use type assertions:
+  // 1. return context!
+  // 2. return context as UserContextType
   if (context === undefined) {
     throw new Error('useUserContext must be used within a UserProvider')
   }
