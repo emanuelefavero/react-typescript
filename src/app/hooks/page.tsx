@@ -8,6 +8,9 @@ export default function Page() {
         <li>
           <Link href='/hooks/use-state'>useState</Link>
         </li>
+        <li>
+          <Link href='/hooks/use-reducer'>useReducer</Link>
+        </li>
       </ul>
     </>
   )
