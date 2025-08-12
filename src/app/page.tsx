@@ -60,6 +60,9 @@ export default function Home() {
         <li>
           <Link href='/using-inferred-types'>Using Inferred Types</Link>
         </li>
+        <li>
+          <Link href='/hooks'>Hooks</Link>
+        </li>
       </ul>
     </>
   )
