@@ -14,19 +14,23 @@ interface UserContextType {
 
 const UserContext = createContext<UserContextType | undefined>(undefined)
 
+// * useUserContext
 export function useUserContext() {
   const context = useContext(UserContext)
+
   if (context === undefined) {
     throw new Error('useUserContext must be used within a UserProvider')
   }
+
   return context
 }
 
-interface UserProviderProps {
+interface Props {
   children: ReactNode
 }
 
-export function UserProvider({ children }: UserProviderProps) {
+// * UserProvider
+export function UserProvider({ children }: Props) {
   const [user, setUser] = useState<User>({
     id: 1,
     name: 'John',

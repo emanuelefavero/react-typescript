@@ -6,12 +6,13 @@ import { useId, useState } from 'react'
 import { useUserContext } from './UserContext'
 
 export default function Component() {
-  const { user, updateUserName } = useUserContext()
+  const { user, updateUserName } = useUserContext() // * <- useUserContext
   const [newName, setNewName] = useState('')
 
   const handleUpdateName = () => {
-    if (newName.trim()) {
-      updateUserName(newName.trim())
+    const trimmedNewName = newName.trim()
+    if (trimmedNewName) {
+      updateUserName(trimmedNewName) // * <- updateUserName from context
       setNewName('')
     }
   }
@@ -26,6 +27,7 @@ export default function Component() {
         <label htmlFor={`newName-${inputId}`} className='sr-only'>
           Update Name:
         </label>
+
         <Input
           id={`newName-${inputId}`}
           type='text'
@@ -34,6 +36,7 @@ export default function Component() {
           placeholder='Enter new name'
           onKeyUp={(e) => e.key === 'Enter' && handleUpdateName()}
         />
+
         <Button onClick={handleUpdateName} disabled={!newName.trim()}>
           Update Name
         </Button>
