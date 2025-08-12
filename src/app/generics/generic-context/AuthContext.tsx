@@ -17,11 +17,7 @@ const AuthContext = createContext<AuthContextType<User> | null>(null)
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null)
 
-  return (
-    <AuthContext.Provider value={{ user, setUser }}>
-      {children}
-    </AuthContext.Provider>
-  )
+  return <AuthContext value={{ user, setUser }}>{children}</AuthContext>
 }
 
 // * Custom hook to use the AuthContext
