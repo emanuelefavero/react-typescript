@@ -11,6 +11,9 @@ export default function Page() {
         <li>
           <Link href='/hooks/use-reducer'>useReducer</Link>
         </li>
+        <li>
+          <Link href='/hooks/use-ref'>useRef</Link>
+        </li>
       </ul>
     </>
   )
