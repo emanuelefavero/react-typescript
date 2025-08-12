@@ -57,6 +57,9 @@ export default function Home() {
         <li>
           <Link href='/component-props'>ComponentProps</Link>
         </li>
+        <li>
+          <Link href='/using-inferred-types'>Using Inferred Types</Link>
+        </li>
       </ul>
     </>
   )
