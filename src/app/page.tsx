@@ -66,6 +66,9 @@ export default function Home() {
         <li>
           <Link href='/class-components'>Class Components</Link>
         </li>
+        <li>
+          <Link href='/context'>Context</Link>
+        </li>
       </ul>
     </>
   )
