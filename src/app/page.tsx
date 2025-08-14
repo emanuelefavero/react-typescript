@@ -73,7 +73,7 @@ export default function Home() {
           <Link href='/error-boundaries'>Error Boundaries</Link>
         </li>
         <li>
-          <Link href='/use'>use</Link>
+          <Link href='/fetch-client'>Fetch in Client Components</Link>
         </li>
       </ul>
     </>
