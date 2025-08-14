@@ -11,6 +11,11 @@ export default function Page() {
             React Error Boundary
           </Link>
         </li>
+        <li>
+          <Link href='/error-boundaries/nextjs-error-boundary'>
+            Next.js Error Boundary
+          </Link>
+        </li>
       </ul>
     </>
   )
