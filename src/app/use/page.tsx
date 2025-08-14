@@ -1,4 +1,5 @@
 import { baseUrl } from '@/config/baseUrl'
+import type { Post } from '@/data/posts'
 
 async function getPosts() {
   const response = await fetch(`${baseUrl}/api/posts`)
@@ -12,7 +13,7 @@ export default async function Page() {
     <>
       <h1>Posts</h1>
       <ul>
-        {posts.map((post: { id: string; title: string }) => (
+        {posts.map((post: Post) => (
           <li key={post.id}>{post.title}</li>
         ))}
       </ul>

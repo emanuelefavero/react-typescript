@@ -1,4 +1,10 @@
-export const posts = [
+export type Post = {
+  id: string
+  title: string
+  content: string
+}
+
+export const posts: Post[] = [
   {
     id: crypto.randomUUID(),
     title: 'First Post',
