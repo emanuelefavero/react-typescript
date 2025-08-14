@@ -17,6 +17,7 @@ export default function Error({ error, reset }: Props) {
     <>
       <h2 className='mb-4'>Something went wrong!</h2>
       <Button
+        className='bg-green-600 hover:bg-green-700'
         onClick={
           () => reset() // Re-render the segment
         }

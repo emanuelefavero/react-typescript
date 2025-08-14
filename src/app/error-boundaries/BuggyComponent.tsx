@@ -15,6 +15,7 @@ export default function Component() {
   return (
     <>
       <Button
+        className='bg-amber-600 hover:bg-amber-700'
         onClick={() => {
           setThrowError(true)
         }}
