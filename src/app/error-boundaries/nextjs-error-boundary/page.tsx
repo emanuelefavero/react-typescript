@@ -1,4 +1,4 @@
-import BuggyComponent from './BuggyComponent'
+import BuggyComponent from '@/app/error-boundaries/BuggyComponent'
 
 export default function Page() {
   return (
