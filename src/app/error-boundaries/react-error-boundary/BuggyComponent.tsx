@@ -1,6 +1,8 @@
 import Button from '@/components/shared/Button'
 import { useState } from 'react'
 
+// * This component simply throws an error when the button is clicked
+
 export default function Component() {
   const [throwError, setThrowError] = useState(false)
 
