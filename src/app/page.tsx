@@ -69,6 +69,9 @@ export default function Home() {
         <li>
           <Link href='/context'>Context</Link>
         </li>
+        <li>
+          <Link href='/error-boundaries'>Error Boundaries</Link>
+        </li>
       </ul>
     </>
   )
