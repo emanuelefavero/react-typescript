@@ -3,13 +3,12 @@
 import Button from '@/components/shared/Button'
 import { useEffect } from 'react'
 
-export default function Error({
-  error,
-  reset,
-}: {
+type Props = {
   error: Error & { digest?: string }
   reset: () => void
-}) {
+}
+
+export default function Error({ error, reset }: Props) {
   useEffect(() => {
     console.error(error) // Log the error to an error reporting service
   }, [error])
