@@ -1,4 +1,22 @@
+import Button from '@/components/shared/Button'
+import { useState } from 'react'
+
 export default function Component() {
-  throw new Error('Intentional render error')
-  return <div>This should never render</div>
+  const [throwError, setThrowError] = useState(false)
+
+  if (throwError) {
+    throw new Error('Error from BuggyComponent')
+  }
+
+  return (
+    <>
+      <Button
+        onClick={() => {
+          setThrowError(true)
+        }}
+      >
+        Throw Error
+      </Button>
+    </>
+  )
 }
