@@ -72,6 +72,9 @@ export default function Home() {
         <li>
           <Link href='/error-boundaries'>Error Boundaries</Link>
         </li>
+        <li>
+          <Link href='/use'>use</Link>
+        </li>
       </ul>
     </>
   )
