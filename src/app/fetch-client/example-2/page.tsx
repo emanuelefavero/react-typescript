@@ -7,14 +7,14 @@ async function getPosts() {
   return await res.json()
 }
 
-// * You can use React's use hook to stream data from the server to client without creating an async server component. Start by fetching data in your Server component...(@see ./Component)
+// * The best way to fetch data in Client Components is to do it in a Server Component and pass the data as props. The only thing to keep in mind is that the Server Component must be async to await the fetch call
 
-export default function Page() {
-  const posts = getPosts()
+export default async function Page() {
+  const posts = await getPosts()
 
   return (
     <>
-      <h1>Fetch in Client Components - Example 1</h1>
+      <h1>Fetch in Client Components - Example 2</h1>
       <Suspense fallback={<div>Loading...</div>}>
         <Component posts={posts} />
       </Suspense>
