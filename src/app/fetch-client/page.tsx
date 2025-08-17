@@ -11,6 +11,9 @@ export default function Page() {
         <li>
           <Link href='/fetch-client/example-2'>Example 2</Link>
         </li>
+        <li>
+          <Link href='/fetch-client/example-3'>Example 3</Link>
+        </li>
       </ul>
     </>
   )
