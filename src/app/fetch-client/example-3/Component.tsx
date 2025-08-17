@@ -5,7 +5,8 @@ import type { Post } from '@/data/posts'
 import { useEffect, useState } from 'react'
 
 export default function Component() {
-  const [posts, setPosts] = useState<Post[] | null>(null)
+  // TIP: Initializing with an empty array is valid even though `Post` has required fields since TypeScript only checks the types when you actually put something in the array
+  const [posts, setPosts] = useState<Post[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function Component() {
   }, [])
 
   if (loading) return <div>Loading...</div>
-  if (!posts) return <div>No posts found</div>
+  if (posts.length === 0) return <div>No posts found</div>
 
   return (
     <ul>
