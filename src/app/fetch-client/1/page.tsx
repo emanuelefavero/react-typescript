@@ -1,6 +1,7 @@
 import { baseUrl } from '@/config/baseUrl'
 import { Suspense } from 'react'
-import Component from './Component'
+import AddPostForm from './AddPostForm'
+import Posts from './Posts'
 
 async function getPosts() {
   const res = await fetch(`${baseUrl}/api/posts`)
@@ -14,9 +15,10 @@ export default async function Page() {
 
   return (
     <>
-      <h1>Fetch in Client Components 1</h1>
+      <h1 className='mb-4'>Fetch in Client Components 1</h1>
+      <AddPostForm />
       <Suspense fallback={<div>Loading...</div>}>
-        <Component posts={posts} />
+        <Posts posts={posts} />
       </Suspense>
     </>
   )
