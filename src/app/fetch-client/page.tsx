@@ -6,13 +6,13 @@ export default function Page() {
       <h1>Fetch in Client Components</h1>
       <ul>
         <li>
-          <Link href='/fetch-client/example-1'>Example 1</Link>
+          <Link href='/fetch-client/1'>Example 1</Link>
         </li>
         <li>
-          <Link href='/fetch-client/example-2'>Example 2</Link>
+          <Link href='/fetch-client/2'>Example 2</Link>
         </li>
         <li>
-          <Link href='/fetch-client/example-3'>Example 3</Link>
+          <Link href='/fetch-client/3'>Example 3</Link>
         </li>
       </ul>
     </>

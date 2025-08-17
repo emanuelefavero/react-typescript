@@ -14,7 +14,7 @@ export default async function Page() {
 
   return (
     <>
-      <h1>Fetch in Client Components - Example 1</h1>
+      <h1>Fetch in Client Components 1</h1>
       <Suspense fallback={<div>Loading...</div>}>
         <Component posts={posts} />
       </Suspense>

@@ -5,7 +5,7 @@ import Component from './Component'
 export default function Page() {
   return (
     <>
-      <h1>Fetch in Client Components - Example 3</h1>
+      <h1>Fetch in Client Components 3</h1>
       <Component />
     </>
   )
