@@ -30,6 +30,8 @@ export async function addPost(formData: FormData): AddPostResponse {
   await writePosts(posts)
 
   revalidatePath('/fetch-client') // Update the post list cache
+  // TIP: If for some reason the data does not update, you can also redirect:
+  // redirect('/fetch-client')
 
   return { success: true }
 }
