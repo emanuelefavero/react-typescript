@@ -4,8 +4,6 @@ import type { Post } from '@/types/posts'
 import { readPosts, writePosts } from '@/utils/posts'
 import { revalidatePath } from 'next/cache'
 
-// TODO Convert the posts to json and write the file to the filesystem so the new post can persist. (You also have to update the /api/posts route to read from the file instead of the in-memory array)
-
 export async function addPost(
   formData: FormData,
 ): Promise<{ success?: boolean; error?: string }> {
