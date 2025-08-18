@@ -29,8 +29,10 @@ export default function AddPostForm() {
       <Button type='submit' disabled={pending}>
         Add Post
       </Button>
-      {state.success && <div>Post added successfully!</div>}
-      {state.error && <div>Error: {state.error}</div>}
+      <div className='flex min-h-6 items-center'>
+        {state.success && <div>Post added successfully!</div>}
+        {state.error && <div>Error: {state.error}</div>}
+      </div>
     </form>
   )
 }
