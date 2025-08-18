@@ -1,17 +1,12 @@
 [
   {
-    "id": "1",
+    "id": "f7790f06-98ba-44d0-ad97-2c6e1f2243b7",
     "title": "First Post",
     "content": "This is the content of the first post."
   },
   {
-    "id": "2",
+    "id": "23151e24-b9cc-40b9-ae5e-215af6608b8d",
     "title": "Second Post",
     "content": "This is the content of the second post."
-  },
-  {
-    "id": "ce56e43c-922c-4a83-9463-39120de88c1d",
-    "title": "ciao",
-    "content": "come va"
   }
 ]
