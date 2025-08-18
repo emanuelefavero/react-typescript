@@ -23,8 +23,8 @@ export async function addPost(formData: FormData): AddPostResponse {
   // Read current posts from file
   const posts = await readPosts()
 
-  // Add the new post to the array
-  posts.push(newPost)
+  // Add the new post to the start of the array
+  posts.unshift(newPost)
 
   // Write the updated posts array back to the file
   await writePosts(posts)
