@@ -1,6 +1,7 @@
 'use server'
 
-import { Post, posts } from '@/data/posts'
+import { Post } from '@/data/posts'
+import { readPosts, writePosts } from '@/data/postsFile'
 import { revalidatePath } from 'next/cache'
 
 // TODO Convert the posts to json and write the file to the filesystem so the new post can persist. (You also have to update the /api/posts route to read from the file instead of the in-memory array)
@@ -20,7 +21,10 @@ export async function addPost(
     title,
     content,
   }
+  // Read current posts from file
+  const posts = await readPosts()
   posts.push(newPost)
+  await writePosts(posts)
   revalidatePath('/fetch-client') // Update the post list cache
   return { success: true }
 }
