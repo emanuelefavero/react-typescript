@@ -1,4 +1,4 @@
-import { readPosts } from '@/data/postsFile'
+import { readPosts } from '@/utils/posts'
 
 export async function GET() {
   const posts = await readPosts()
