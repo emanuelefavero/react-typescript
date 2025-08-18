@@ -1,6 +1,6 @@
+import type { Post } from '@/types/posts'
 import { promises as fs } from 'fs'
 import path from 'path'
-import type { Post } from './posts'
 
 const postsFile = path.resolve(process.cwd(), 'src/data/posts.json')
 

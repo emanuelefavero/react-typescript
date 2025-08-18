@@ -1,6 +1,6 @@
 'use client'
 
-import type { Post } from '@/data/posts'
+import type { Post } from '@/types/posts'
 
 export default function Component({ posts }: { posts: Post[] }) {
   return (

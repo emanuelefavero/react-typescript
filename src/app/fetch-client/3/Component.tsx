@@ -1,7 +1,7 @@
 'use client'
 
 import { baseUrl } from '@/config/baseUrl'
-import type { Post } from '@/data/posts'
+import type { Post } from '@/types/posts'
 import { useEffect, useState } from 'react'
 
 export default function Component() {

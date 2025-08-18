@@ -1,6 +1,6 @@
 'use client'
 
-import type { Post } from '@/data/posts'
+import type { Post } from '@/types/posts'
 import { use } from 'react'
 
 // * ...and pass the promise to your Client Component as prop:
