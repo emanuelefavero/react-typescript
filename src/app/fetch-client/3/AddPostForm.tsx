@@ -4,24 +4,28 @@ import { addPost } from '@/app/fetch-client/actions'
 import Button from '@/components/shared/Button'
 import Input from '@/components/shared/Input'
 import Textarea from '@/components/shared/Textarea'
-import { useState } from 'react'
+import { useState, useTransition } from 'react'
 
 export default function Component() {
   const [message, setMessage] = useState<string>('')
+  const [isPending, startTransition] = useTransition()
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     const formData = new FormData(e.currentTarget)
-    const result = await addPost(formData) // Call server action and get result
 
-    if (result?.success) {
-      setMessage('Post added successfully!')
+    startTransition(async () => {
+      const result = await addPost(formData) // Call server action and get result
 
-      // TIP: Here you could also use a router to redirect or update the `posts` state with the new post of `posts` are managed on the client (use Zustand for the `posts` state so you can access it from anywhere)
-    } else {
-      setMessage(`Error: ${result?.error || 'Unknown error'}`)
-    }
+      if (result?.success) {
+        setMessage('Post added successfully!')
+
+        // TIP: Here you could also use a router to redirect or update the `posts` state with the new post of `posts` are managed on the client (use Zustand for the `posts` state so you can access it from anywhere)
+      } else {
+        setMessage(`Error: ${result?.error || 'Unknown error'}`)
+      }
+    })
   }
 
   return (
@@ -31,7 +35,9 @@ export default function Component() {
     >
       <Input type='text' name='title' placeholder='Title' required />
       <Textarea name='content' placeholder='Content' required />
-      <Button type='submit'>Add Post</Button>
+      <Button type='submit' disabled={isPending}>
+        Add Post
+      </Button>
       <div className='flex min-h-6 items-center'>
         {message && <p>{message}</p>}
       </div>
