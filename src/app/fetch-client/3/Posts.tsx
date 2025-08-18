@@ -24,13 +24,16 @@ export default function Component() {
   if (posts.length === 0) return <div>No posts found</div>
 
   return (
-    <ul>
-      {posts.map((post) => (
-        <li key={post.id}>
-          <h3>{post.title}</h3>
-          <p>{post.content}</p>
-        </li>
-      ))}
-    </ul>
+    <>
+      <h2 className='mb-2 text-xl font-semibold'>Posts</h2>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>
+            <h3>{post.title}</h3>
+            <p>{post.content}</p>
+          </li>
+        ))}
+      </ul>
+    </>
   )
 }
