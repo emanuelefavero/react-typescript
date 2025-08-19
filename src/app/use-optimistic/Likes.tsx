@@ -5,42 +5,50 @@ import { baseUrl } from '@/config/baseUrl'
 import { startTransition, useEffect, useOptimistic, useState } from 'react'
 
 export default function Component() {
-  const [likes, setLikes] = useState<number>(0)
+  const [likes, setLikes] = useState(0)
 
-  // optimistic hook: we define how the state should update optimistically
-  const [optimisticLikes, addOptimisticLike] = useOptimistic(
-    likes,
-    (state, newLike: number) => state + newLike,
-  )
+  // Initialize optimistic likes
+  const [optimisticLikes, setOptimisticLikes] = useOptimistic(likes)
 
-  // Show initial likes
+  // Fetch initial likes
   useEffect(() => {
     fetch(`${baseUrl}/api/likes`)
       .then((res) => res.json())
-      .then((data) => setLikes(data.likes))
+      .then((data) => {
+        setLikes(data.likes)
+      })
   }, [])
 
-  // * Update like optimistically
-  const handleLike = async () => {
+  // Like action
+  const likeAction = async () => {
+    // Set optimistic likes to update the UI immediately
     startTransition(() => {
-      addOptimisticLike(1) // Update UI instantly
+      setOptimisticLikes(optimisticLikes + 1)
     })
 
-    // Send request to server
+    // Send the like action to the server
     try {
       const res = await fetch(`${baseUrl}/api/likes`, { method: 'POST' })
       const data = await res.json()
-      setLikes(data.likes) // Reconcile with server state
-    } catch (error) {
-      console.error(error)
-      setLikes(likes) // If the request fails, reset to the previous likes count
+
+      setLikes(data.likes) // Update the likes state
+    } catch {
+      setLikes(likes) // Revert to the previous likes state if error
     }
   }
 
   return (
     <>
+      {/* Show optimistic likes */}
       <p className='mb-2'>Likes: {optimisticLikes}</p>
-      <Button onClick={handleLike}>Like</Button>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault()
+          likeAction()
+        }}
+      >
+        <Button type='submit'>Like</Button>
+      </form>
     </>
   )
 }
