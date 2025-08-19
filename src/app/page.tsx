@@ -75,6 +75,9 @@ export default function Home() {
         <li>
           <Link href='/fetch-client'>Fetch in Client Components</Link>
         </li>
+        <li>
+          <Link href='/use-optimistic'>useOptimistic</Link>
+        </li>
       </ul>
     </>
   )
