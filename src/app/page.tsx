@@ -78,6 +78,9 @@ export default function Home() {
         <li>
           <Link href='/use-optimistic'>useOptimistic</Link>
         </li>
+        <li>
+          <Link href='/enums'>Enums</Link>
+        </li>
       </ul>
     </>
   )
