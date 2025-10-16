@@ -87,6 +87,9 @@ export default function Home() {
         <li>
           <Link href='/as-const'>as const</Link>
         </li>
+        <li>
+          <Link href='/promise'>Promise</Link>
+        </li>
       </ul>
     </>
   )
