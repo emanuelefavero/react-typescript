@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils'
 const variants = {
   primary: /*tw*/ 'bg-sky-500 hover:bg-sky-600',
   secondary: /*tw*/ 'bg-neutral-500 hover:bg-neutral-600',
-} as const
+} as const // * 'as const' makes the object readonly and its properties literal types
 type Variant = keyof typeof variants // * 'primary' | 'secondary'
 
 type Props = React.ComponentPropsWithRef<'button'> & {
