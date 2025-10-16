@@ -81,6 +81,9 @@ export default function Home() {
         <li>
           <Link href='/enums'>Enums</Link>
         </li>
+        <li>
+          <Link href='/keyof-typeof'>keyof typeof</Link>
+        </li>
       </ul>
     </>
   )
