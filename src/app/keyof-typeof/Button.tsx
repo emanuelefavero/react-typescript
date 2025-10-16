@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils'
 
 const variants = {
-  primary: /*tw*/ 'bg-sky-500',
-  secondary: /*tw*/ 'bg-neutral-500',
+  primary: /*tw*/ 'bg-sky-500 hover:bg-sky-600',
+  secondary: /*tw*/ 'bg-neutral-500 hover:bg-neutral-600',
 } as const
 type Variant = keyof typeof variants // * 'primary' | 'secondary'
 
@@ -19,7 +19,7 @@ export default function Component({
   return (
     <button
       className={cn(
-        'rounded-md px-3.5 py-2.5 font-semibold text-white',
+        'cursor-pointer rounded-md px-3 py-1 text-white transition duration-200 active:scale-95',
         variants[variant],
         className,
       )}
