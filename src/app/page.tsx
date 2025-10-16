@@ -84,6 +84,9 @@ export default function Home() {
         <li>
           <Link href='/keyof-typeof'>keyof typeof</Link>
         </li>
+        <li>
+          <Link href='/as-const'>as const</Link>
+        </li>
       </ul>
     </>
   )
