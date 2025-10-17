@@ -102,6 +102,9 @@ export default function Home() {
         <li>
           <Link href='/exclude'>Exclude</Link>
         </li>
+        <li>
+          <Link href='/extends'>Extends</Link>
+        </li>
       </ul>
     </>
   )
