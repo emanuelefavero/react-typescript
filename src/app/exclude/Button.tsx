@@ -14,14 +14,18 @@ type Props = {
   variant: NonDangerVariant
 }
 
-// --------------------------------
-
-// TIP: We can also create our own Exclude type using conditional types
-// type MyExclude<T, U> = T extends U ? never : T
-
-// type ErrorVariant = MyExclude<Variant, 'primary' | 'secondary'>
-// 'danger'
-
 export default function Button({ variant }: Props) {
   return <button className={variants[variant]}>{variant.toUpperCase()}</button>
 }
+
+// --------------------------------
+
+// TIP: We can also create our own Exclude type using conditional types
+type MyExclude<T, U> = T extends U ? never : T
+
+type ErrorVariant = MyExclude<Variant, 'primary' | 'secondary'>
+// 'danger'
+
+const errorVariant: ErrorVariant = 'danger'
+
+export { errorVariant }
