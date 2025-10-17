@@ -1,8 +1,8 @@
-// * Exclude can be used to exclude specific types from a union type. It is the opposite of Extract (@see /extract)
+// * Extract can be used to select specific types from a union type. It is the opposite of Exclude (@see /exclude)
 
 type Variant = 'primary' | 'secondary' | 'danger'
 
-type NonDangerVariant = Exclude<Variant, 'danger'>
+type NonDangerVariant = Extract<Variant, 'primary' | 'secondary'>
 // 'primary' | 'secondary'
 
 const variants = {
@@ -20,8 +20,7 @@ export default function Button({ variant }: Props) {
 
 // --------------------------------
 
-// TIP: We can also create our own Exclude type using conditional types
-type MyExclude<T, U> = T extends U ? never : T
+// TIP: We can also create our own Extract type using conditional types
+type MyExtract<T, U> = T extends U ? T : never
 
-export type ErrorVariant = MyExclude<Variant, 'primary' | 'secondary'>
-// 'danger'
+export type ErrorVariant = MyExtract<Variant, 'danger'>
