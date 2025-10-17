@@ -96,6 +96,9 @@ export default function Home() {
         <li>
           <Link href='/readonly'>Readonly</Link>
         </li>
+        <li>
+          <Link href='/omit'>Omit</Link>
+        </li>
       </ul>
     </>
   )
