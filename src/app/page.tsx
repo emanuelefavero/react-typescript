@@ -90,6 +90,9 @@ export default function Home() {
         <li>
           <Link href='/promise'>Promise</Link>
         </li>
+        <li>
+          <Link href='/record'>Record</Link>
+        </li>
       </ul>
     </>
   )
