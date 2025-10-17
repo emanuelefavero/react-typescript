@@ -93,6 +93,9 @@ export default function Home() {
         <li>
           <Link href='/record'>Record</Link>
         </li>
+        <li>
+          <Link href='/readonly'>Readonly</Link>
+        </li>
       </ul>
     </>
   )
