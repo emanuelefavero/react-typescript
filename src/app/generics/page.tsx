@@ -7,6 +7,9 @@ export default function Page() {
 
       <ul>
         <li>
+          <Link href='/generics/generic-type'>Generic Type</Link>
+        </li>
+        <li>
           <Link href='/generics/generic-component'>Generic Component</Link>
         </li>
         <li>
