@@ -13,6 +13,9 @@ export default function Page() {
           <Link href='/generics/generic-function'>Generic Function</Link>
         </li>
         <li>
+          <Link href='/generics/generic-class'>Generic Class</Link>
+        </li>
+        <li>
           <Link href='/generics/generic-component'>Generic Component</Link>
         </li>
         <li>
