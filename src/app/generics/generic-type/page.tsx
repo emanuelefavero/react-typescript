@@ -27,6 +27,8 @@ const item1: ItemWithId<{ id: number; name: string }> = {
   item: { id: 1, name: 'Item 1' },
 }
 
+// TIP: You can also do the same with interfaces
+
 export default function Page() {
   return (
     <>
