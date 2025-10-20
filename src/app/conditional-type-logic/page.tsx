@@ -27,6 +27,27 @@ type Wrapper<T> = {
 export const wrappedString: Wrapper<string> = { value: 'hello' }
 export const wrappedNumber: Wrapper<number> = { value: 42 }
 
+// * Recreating built-in utility types
+// Exclude
+type MyExclude<T, U> = T extends U ? never : T
+export type Excluded = MyExclude<'a' | 'b', 'a'> // 'b'
+
+// Extract
+type MyExtract<T, U> = T extends U ? T : never
+export type Extracted = MyExtract<'a' | 'b', 'a'> // 'a'
+
+// Omit
+type MyOmit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
+type User = {
+  id: number
+  name: string
+}
+export type UserWithoutName = MyOmit<User, 'name'> // { id: number }
+
+// Pick
+type MyPick<T, K extends keyof T> = { [P in K]: T[P] }
+export type PickedUser = MyPick<User, 'id'> // { id: number }
+
 export default function Page() {
   return (
     <>
