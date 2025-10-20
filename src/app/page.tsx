@@ -7,6 +7,9 @@ export default function Home() {
 
       <ul>
         <li>
+          <Link href='/conditional-type-logic'>Conditional Type Logic</Link>
+        </li>
+        <li>
           <Link href='/void'>Void</Link>
         </li>
         <li>
